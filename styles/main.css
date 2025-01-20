@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-normal {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 .quicksand-normal {
     font-family: "Quicksand", serif;
@@ -6,7 +12,7 @@
     font-style: normal;
 }
 
-/* font-support end */
+
 /* shared styles */
 * {
     margin: 0;
@@ -17,21 +23,58 @@
 /* color and font variable */
 :root {
     --color-orange: #FEA301;
+    --color-orange-2: #F0AA00;
     --color-sky-blue: #01ACFD;
+    --color-sky-blue-2: #64C8FF;
     --color-cyan: #05D4DF;
     --color-purple: #5D58EF;
+    --color-purple-2: #8700FF;
     --color-dark: #000000;
     --color-gray: #808080;
     --color-white: #FFFFFF;
 
     --font-xxl: 3.5rem;
+    /* 56 px*/
     --font-xl: 2.8rem;
     --font-l: 1.5rem;
-    --cont-m: 0.95rem;
+    --font-m: 1.25rem;
+    --cont-s: 0.95rem;
 }
 
-.btn-primary {
-    background: var(--color-orange);
+.color-orange {
+    color: var(--color-orange);
+}
+
+.color-orange-2 {
+    color: var(--color-orange-2);
+}
+
+.color-sky-blue {
+    color: var(--color-sky-blue);
+}
+
+.color-sky-blue-2 {
+    color: var(--color-sky-blue-2);
+}
+
+.color-cyan {
+    color: var(--color-cyan);
+}
+
+.color-cyan {
+    color: var(--color-cyan-2);
+}
+
+.color-dark {
+    color: var(--color-dark);
+}
+
+.color-gray {
+    color: #808080;
+}
+
+.btn {
+
     padding: 15px 36px;
     color: var(--color-white);
     border: none;
@@ -41,27 +84,66 @@
     cursor: pointer;
 }
 
-.btn-primary:hover {
+.btn-orange {
+    background: var(--color-orange);
+}
+
+.btn-orange:hover {
     background: var(--color-sky-blue);
     transition: all 0.5s;
 }
-.section-title{}
 
+.btn-black {
+    background: var(--color-dark);
+}
+
+.btn-black:hover {
+    background: var(--color-gray);
+    transition: all 0.5s;
+}
+
+
+.section-title {
+    font-size: var(--font-xl);
+    font-weight: 700;
+    margin-bottom: 80px;
+    color: var(--color-dark);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
 
 /* ==================================== */
 
-/* body{
+body {
     max-width: 1440px;
-    background: #01ACFD;
     margin: 0 auto;
-} */
+}
 
 header {
     max-width: 1160px;
     margin: 0 auto;
     /* padding: 20px 140px; */
 }
-.hide-desktop{
+
+.hide-desktop {
     display: none;
 }
 
@@ -101,6 +183,7 @@ nav ul li a {
     font-weight: 700;
 
 }
+
 nav ul li:nth-child(1) a {
     color: var(--color-orange);
 }
@@ -115,4 +198,101 @@ nav ul li:nth-child(3) a {
 
 nav ul li:nth-child(4) a {
     color: var(--color-purple);
+}
+
+/* hero section styles */
+.hero {
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-title {
+    font-size: var(--font-xxl);
+    font-weight: 700;
+    line-height: 61px;
+
+
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-dark);
+    margin: 24px 0;
+}
+
+/* main */
+main {
+    padding: 40px 16px;
+}
+
+/* curriculum section styles */
+.curriculum-section {
+    background-image: url(../assets/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.curriculum-container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.curriculum-card-container {
+    grid-template-columns: repeat(3, 368px);
+    gap: 28px;
+}
+
+.card {
+    
+    border-radius: 18.86px;
+    padding: 40px;
+
+}
+
+.card-kinder {
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-elementary {
+    border: 0.94px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-middle {
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30.65px;
+    margin: 32px 0;
+}
+
+.card .card-details {
+    font-family: "Raleway", Quicksand;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 28.3px;
+    margin-bottom: 38px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.3px;
+}
+
+.slide-icon {
+    margin-top: 80px;
+    cursor: pointer;
 }
