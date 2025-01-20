@@ -17,7 +17,8 @@
     section {
         padding: unset;
     }
-    .section-title{
+
+    .section-title {
         margin-bottom: 20px;
     }
 
@@ -53,10 +54,11 @@
     }
 
     .curriculum-card-container {
-        /* grid-template-columns: 357px; */
-        grid-template-columns: 100%;
+        grid-template-columns: 357px;
+        /* grid-template-columns: 100%; */
         gap: 12px;
         justify-content: center;
+        margin-left: 20px;
 
     }
 
@@ -86,4 +88,51 @@
         display: none;
     }
 
+    .story-container {
+        padding: 40px 20px;
+    }
+
+    .story-left-card {
+        display: none;
+    }
+
+    .story-content {
+        display: unset;
+    }
+
+    .story-right-card {
+        grid-template-columns: auto auto;
+        gap: 12px;
+
+    }
+
+    .right-card {
+        border-radius: 9px;
+        padding: 0;
+    }
+
+    .story-right-card img {
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+    }
+
+    .tag {
+        padding: 5px 10px;
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: var(--color-white);
+        border-radius: 48px;
+        position: absolute;
+        bottom: 87%;
+    }
+
+    .right-card>.card-content {
+        padding: 10px 20px 20px 30px;
+    }
+
+    .right-card .card-content>h4 {
+        font-size: 0.5rem;
+        line-height: 17px;
+        padding-top: 15px;
+    }
 }

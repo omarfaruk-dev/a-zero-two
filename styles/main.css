@@ -32,6 +32,8 @@
     --color-dark: #000000;
     --color-gray: #808080;
     --color-white: #FFFFFF;
+    --color-green: #95B226;
+    --color-blue: #5D58F0;
 
     --font-xxl: 3.5rem;
     /* 56 px*/
@@ -70,7 +72,15 @@
 }
 
 .color-gray {
-    color: #808080;
+    color: var(--color-gray);
+}
+
+.bg-green {
+    background: var(--color-green);
+}
+
+.bg-blue {
+    background: var(--color-blue);
 }
 
 .btn {
@@ -132,10 +142,10 @@ section {
 
 /* ==================================== */
 
-body {
+/* body {
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 
 header {
     max-width: 1160px;
@@ -224,9 +234,9 @@ nav ul li:nth-child(4) a {
 }
 
 /* main */
-main {
+/* main {
     padding: 40px 16px;
-}
+} */
 
 /* curriculum section styles */
 .curriculum-section {
@@ -246,7 +256,7 @@ main {
 }
 
 .card {
-    
+
     border-radius: 18.86px;
     padding: 40px;
 
@@ -255,7 +265,7 @@ main {
 .card-kinder {
     border: 0.94px solid rgb(222, 245, 255);
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
 .card-elementary {
@@ -295,4 +305,104 @@ main {
 .slide-icon {
     margin-top: 80px;
     cursor: pointer;
+}
+
+/* our story styles */
+.story-section {
+    background-image: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%), url(../assets/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.story-container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.story-content {
+    display: flex;
+    gap: 20px;
+
+}
+/* story left card */
+.story-left-card {
+    background: var(--color-white);
+    border-radius: 16px;
+    height: 630px;
+    width: 540px;
+}
+
+.story-left-card img {
+    border-radius: 16px 16px 0 0;
+}
+
+.story-left-card .card-content {
+    padding: 30px 38px 34px;
+}
+
+.card-content .card-tag {
+    background: var(--color-cyan);
+    color: var(--color-white);
+    border-radius: 48px;
+    padding: 15px 20px;
+    bottom: 50px;
+    position: relative;
+    font-family: "Raleway";
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.card-heading {
+    font-size: var(--font-m);
+    font-weight: 700;
+    line-height: 38.35px;
+    margin-bottom: 50px;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    font-family: "Raleway";
+    color: var(--color-gray);
+}
+
+.story-right-card img {
+    border-radius: 16px 16px 0 0;
+}
+
+/* left card end */
+
+.story-right-card {
+    display: grid;
+    grid-template-columns: repeat(2, 290px) ;
+    gap: 20px;
+
+}
+
+.right-card {
+    border-radius: 16px;
+    background: var(--color-white);
+    /* width: 290px;
+    height: 300px; */
+}
+
+.right-card .card-content > h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.76px;
+}
+.right-card > .card-content{
+    padding: 37px 38px 30px;
+    position: relative;
+}
+
+.tag {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-white);
+    border-radius: 48px;
+    position: absolute;
+    bottom: 87%;
 }
