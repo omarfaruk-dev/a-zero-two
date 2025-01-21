@@ -324,6 +324,7 @@ nav ul li:nth-child(4) a {
     gap: 20px;
 
 }
+
 /* story left card */
 .story-left-card {
     background: var(--color-white);
@@ -375,7 +376,7 @@ nav ul li:nth-child(4) a {
 
 .story-right-card {
     display: grid;
-    grid-template-columns: repeat(2, 290px) ;
+    grid-template-columns: repeat(2, 290px);
     gap: 20px;
 
 }
@@ -387,12 +388,13 @@ nav ul li:nth-child(4) a {
     height: 300px; */
 }
 
-.right-card .card-content > h4 {
+.right-card .card-content>h4 {
     font-size: 0.95rem;
     font-weight: 700;
     line-height: 28.76px;
 }
-.right-card > .card-content{
+
+.right-card>.card-content {
     padding: 37px 38px 30px;
     position: relative;
 }
@@ -405,4 +407,81 @@ nav ul li:nth-child(4) a {
     border-radius: 48px;
     position: absolute;
     bottom: 87%;
+}
+
+.story-container button {
+    margin-top: 85px;
+}
+
+/* footer styles */
+footer {
+    background: var(--color-sky-blue);
+
+}
+
+.footer-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 125px 0;
+}
+
+.footer-branding {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 39.51px;
+    color: var(--color-white);
+}
+
+.footer-branding h3 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 39.51px;
+}
+
+.footer-left p {
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: var(--color-white);
+}
+
+.footer-about {
+    color: var(--color-white);
+}
+
+.footer-about h4 {
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-about ul li {
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+
+.footer-about ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.footer-touch h4 {
+    margin-bottom: 32px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }
