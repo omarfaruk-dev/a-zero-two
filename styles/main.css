@@ -30,13 +30,13 @@
     --color-purple: #5D58EF;
     --color-purple-2: #8700FF;
     --color-dark: #000000;
+    --color-dark-2: #444444;
     --color-gray: #808080;
     --color-white: #FFFFFF;
     --color-green: #95B226;
     --color-blue: #5D58F0;
 
     --font-xxl: 3.5rem;
-    /* 56 px*/
     --font-xl: 2.8rem;
     --font-l: 1.5rem;
     --font-m: 1.25rem;
@@ -108,7 +108,7 @@
 }
 
 .btn-black:hover {
-    background: var(--color-gray);
+    background: var(--color-dark-2);
     transition: all 0.5s;
 }
 
@@ -158,15 +158,12 @@ header {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    height: 82px;
 }
 
 .branding {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -177,10 +174,6 @@ nav {
     color: var(--color-dark);
     font-size: 2rem;
     margin-left: 10px;
-}
-
-nav ul {
-    display: flex;
 }
 
 nav ul li {
@@ -209,10 +202,15 @@ nav ul li:nth-child(3) a {
 nav ul li:nth-child(4) a {
     color: var(--color-purple);
 }
+
 /* marquee */
 marquee {
     color: var(--color-orange);
     font-weight: 700;
+}
+
+marquee span {
+    color: var(--color-sky-blue);
 }
 
 /* hero section styles */
@@ -226,8 +224,10 @@ marquee {
     font-size: var(--font-xxl);
     font-weight: 700;
     line-height: 61px;
+}
 
-
+.hero-title::selection {
+    color: var(--color-cyan);
 }
 
 .hero-subtitle {
@@ -236,6 +236,10 @@ marquee {
     line-height: 25px;
     color: var(--color-dark);
     margin: 24px 0;
+}
+
+.hero-subtitle::selection {
+    background: var(--color-cyan);
 }
 
 /* main */
@@ -345,17 +349,20 @@ marquee {
 }
 
 .story-content {
-    display: flex;
     gap: 20px;
-
 }
 
 /* story left card */
+
 .story-left-card {
     background: var(--color-white);
     border-radius: 16px;
     height: 630px;
     width: 540px;
+}
+
+.story-left-card:hover {
+    cursor: pointer;
 }
 
 .story-left-card img {
@@ -397,10 +404,9 @@ marquee {
     border-radius: 16px 16px 0 0;
 }
 
-/* left card end */
+/* right card */
 
 .story-right-card {
-    display: grid;
     grid-template-columns: repeat(2, 290px);
     gap: 20px;
 
@@ -409,8 +415,10 @@ marquee {
 .right-card {
     border-radius: 16px;
     background: var(--color-white);
-    /* width: 290px;
-    height: 300px; */
+}
+
+.right-card:hover {
+    cursor: pointer;
 }
 
 .right-card .card-content>h4 {
@@ -441,19 +449,16 @@ marquee {
 /* footer styles */
 footer {
     background: var(--color-sky-blue);
-
 }
 
 .footer-container {
     max-width: 1160px;
     margin: 0 auto;
-    display: flex;
     justify-content: space-around;
     padding: 125px 0;
 }
 
 .footer-branding {
-    display: flex;
     align-items: center;
     margin-bottom: 35px;
     font-size: 2.6rem;
@@ -498,6 +503,11 @@ footer {
     line-height: 25px;
 }
 
+.footer-about ul li a:hover {
+    color: var(--color-dark);
+    transition: all 0.3s;
+}
+
 .footer-touch h4 {
     margin-bottom: 32px;
     font-size: 1.6rem;
@@ -506,7 +516,6 @@ footer {
 }
 
 .footer-icon {
-    display: flex;
     justify-content: space-around;
     gap: 10px;
 }
