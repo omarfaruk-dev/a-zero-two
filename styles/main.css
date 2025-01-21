@@ -209,6 +209,11 @@ nav ul li:nth-child(3) a {
 nav ul li:nth-child(4) a {
     color: var(--color-purple);
 }
+/* marquee */
+marquee {
+    color: var(--color-orange);
+    font-weight: 700;
+}
 
 /* hero section styles */
 .hero {
@@ -234,9 +239,6 @@ nav ul li:nth-child(4) a {
 }
 
 /* main */
-/* main {
-    padding: 40px 16px;
-} */
 
 /* curriculum section styles */
 .curriculum-section {
@@ -256,10 +258,17 @@ nav ul li:nth-child(4) a {
 }
 
 .card {
-
+    flex-direction: column;
     border-radius: 18.86px;
-    padding: 40px;
+    padding: 50px 40px;
+    gap: 32px;
 
+}
+
+.card img {
+    width: 47%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .card-kinder {
@@ -284,7 +293,7 @@ nav ul li:nth-child(4) a {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 30.65px;
-    margin: 32px 0;
+    /* margin: 32px 0; */
 }
 
 .card .card-details {
@@ -292,7 +301,7 @@ nav ul li:nth-child(4) a {
     font-size: 0.95rem;
     font-weight: 500;
     line-height: 28.3px;
-    margin-bottom: 38px;
+    margin-bottom: 6px;
 }
 
 .card a {
@@ -305,6 +314,22 @@ nav ul li:nth-child(4) a {
 .slide-icon {
     margin-top: 80px;
     cursor: pointer;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.slide-icon .circle-icon {
+    background: var(--color-orange);
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.slide-icon .circle-icon:hover {
+    background: var(--color-sky-blue);
+    transition: all 0.5s;
 }
 
 /* our story styles */
@@ -410,7 +435,7 @@ nav ul li:nth-child(4) a {
 }
 
 .story-container button {
-    margin-top: 85px;
+    margin-top: 80px;
 }
 
 /* footer styles */
