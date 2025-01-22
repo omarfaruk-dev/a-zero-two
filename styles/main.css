@@ -317,10 +317,8 @@ marquee span {
 
 .slide-icon {
     margin-top: 80px;
-    cursor: pointer;
     justify-content: center;
     gap: 10px;
-
 }
 
 .slide-icon .circle-icon {
@@ -334,6 +332,7 @@ marquee span {
 .slide-icon .circle-icon:hover {
     background: var(--color-sky-blue);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 /* our story styles */
@@ -455,7 +454,7 @@ footer {
     max-width: 1160px;
     margin: 0 auto;
     justify-content: space-around;
-    padding: 125px 0;
+    padding: 125px 0 170px;
 }
 
 .footer-branding {
