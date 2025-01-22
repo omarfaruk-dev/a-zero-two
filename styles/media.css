@@ -5,6 +5,7 @@
     .btn {
         padding: 10px 24px;
         font-size: 1rem;
+        border-radius: 10px;
     }
 
     .hide {
@@ -104,6 +105,7 @@
 
     .story-container {
         padding: 40px 20px 0;
+        margin: 0 auto;
     }
 
     .story-left-card {

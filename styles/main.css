@@ -314,6 +314,10 @@ marquee span {
     font-weight: 700;
     line-height: 28.3px;
 }
+.card a:hover{
+    font-weight: 800;
+    color: var(--color-dark);
+}
 
 .slide-icon {
     margin-top: 80px;
@@ -344,7 +348,7 @@ marquee span {
 
 .story-container {
     max-width: 1160px;
-    margin: 0 auto;
+    margin: 60px auto 0;
 }
 
 .story-content {
@@ -453,7 +457,7 @@ footer {
 .footer-container {
     max-width: 1160px;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 125px 0 170px;
 }
 
@@ -517,4 +521,7 @@ footer {
 .footer-icon {
     justify-content: space-around;
     gap: 10px;
+}
+.footer-icon img:hover{
+    opacity: 0.9;
 }
